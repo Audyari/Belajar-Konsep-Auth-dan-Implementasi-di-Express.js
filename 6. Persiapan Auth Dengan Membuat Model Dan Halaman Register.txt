@@ -1,0 +1,14 @@
+
+// Persiapan Auth Dengan Membuat Model Dan Halaman Register
+
+1. jalankan mongoDB 
+    "C:\Program Files\MongoDB\Server\7.0\bin\mongod.exe" --dbpath="c:\data\db"
+
+2. npm init -y
+
+3. npm i express mongoose ejs bcrypt
+
+4. npm install -g nodemon
+
+5. menjalankan nya ketik :
+    nodemon index.js
