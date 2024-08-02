@@ -1,0 +1,25 @@
+// 4. Mengenal Cara Kerja Salt Untuk Hash
+
+1. https://emn178.github.io/online-tools/sha256.html
+
+Salt adalah sebuah nilai acak yang ditambahkan ke password sebelum dihash. Tujuan utama penggunaan salt adalah untuk mencegah serangan berbasis kamus (dictionary attack) dan serangan tabel pelangi (rainbow table) pada password yang dihash.
+
+Berikut adalah cara kerja salt dalam memperkuat hashing password:
+
+Menambahkan Keunikan: Saat password dihash, salt yang unik untuk setiap password juga ikut dihash bersama. Ini menyebabkan setiap hash password menjadi unik, bahkan jika password-nya sama.
+
+Mencegah Serangan Tabel Pelangi: Tabel pelangi adalah tabel pre-computed hash yang digunakan oleh penyerang untuk mencoba mencocokkan hash password yang dicuri. Dengan adanya salt yang unik, tabel pelangi tidak dapat digunakan karena setiap hash password berbeda.
+
+Mencegah Serangan Kamus: Pada serangan kamus, penyerang mencoba mencocokkan hash password dengan daftar password umum. Dengan adanya salt, penyerang harus membuat daftar hash baru untuk setiap password yang dicoba, sehingga memperlambat proses serangan.
+
+Cara Implementasi Salt:
+
+Generate Salt: Saat pengguna membuat password baru, sistem akan membangkitkan nilai salt yang acak, biasanya berupa string acak dengan panjang tertentu (misalnya 16 karakter).
+
+Simpan Salt: Salt disimpan bersama-sama dengan hash password, biasanya pada database. Salt tidak perlu dirahasiakan karena tujuannya adalah untuk membuat setiap hash password menjadi unik.
+
+Lakukan Hashing: Saat pengguna memasukkan password, sistem akan menggabungkan password dengan salt yang sesuai, lalu melakukan hashing pada kombinasi tersebut.
+
+Verifikasi Password: Saat pengguna mencoba masuk, sistem akan mengambil salt yang sesuai dari database, menggabungkannya dengan password yang dimasukkan, lalu menghash kombinasi tersebut. Hash yang dihasilkan kemudian dibandingkan dengan hash yang tersimpan di database.
+
+Dengan menggunakan salt, keamanan hashing password menjadi lebih kuat karena setiap hash akan unik, bahkan jika password-nya sama. Ini efektif mencegah serangan berbasis kamus dan tabel pelangi.
