@@ -1,0 +1,16 @@
+
+
+7. Cara Menyimpan Data Registrasi Dengan Bcrypt
+
+1. panggil mongos nya
+
+2. cmd : 
+
+    mongosh
+
+    use auth_demo
+    show collections
+    db.users.find({})
+
+3. 
+    
