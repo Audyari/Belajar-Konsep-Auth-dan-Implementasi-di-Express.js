@@ -1,0 +1,35 @@
+
+Memahami Perbedaan Authentication Dan Authorization :
+
+Memahami Perbedaan antara Authentication dan Authorization adalah penting dalam konteks keamanan sistem dan akses informasi. Berikut adalah penjelasan mengenai perbedaan keduanya:
+
+Authentication (Otentikasi):
+
+Authentication adalah proses untuk memverifikasi identitas pengguna atau entitas.
+Tujuannya adalah memastikan bahwa orang atau entitas yang mengakses sistem atau informasi adalah orang yang seharusnya memiliki akses.
+
+Contoh metode authentication antara lain:
+
+Username dan password
+Biometrik (sidik jari, pengenalan wajah, iris mata)
+Kartu identitas atau token
+Verifikasi dua faktor (2FA)
+
+Authorization (Otorisasi):
+
+Authorization adalah proses untuk menentukan hak akses dan tindakan yang diperbolehkan bagi pengguna atau entitas yang terautentikasi.
+Tujuannya adalah untuk membatasi akses dan tindakan pengguna atau entitas sesuai dengan aturan dan kebijakan yang ditetapkan.
+
+Contoh authorization antara lain:
+
+Pengguna admin memiliki akses untuk mengubah pengaturan sistem.
+Pengguna biasa hanya dapat melihat tetapi tidak dapat mengubah data.
+Pengguna tertentu memiliki akses untuk membaca file tertentu tetapi tidak dapat menulis atau menghapusnya.
+Perbedaan utama antara authentication dan authorization adalah:
+
+Authentication memverifikasi identitas pengguna, sedangkan authorization menentukan apa yang dapat dilakukan oleh pengguna yang terautentikasi.
+Authentication menjawab pertanyaan "Siapa Anda?", sedangkan authorization menjawab pertanyaan "Apa yang dapat Anda lakukan?"
+Authentication terjadi terlebih dahulu sebelum authorization, karena sistem perlu tahu siapa pengguna sebelum menentukan apa yang dapat mereka lakukan.
+Dalam banyak sistem, authentication dan authorization saling melengkapi untuk memastikan keamanan dan kontrol akses yang efektif.
+
+
